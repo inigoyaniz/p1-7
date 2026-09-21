@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mi página web</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>Este es un párrafo simple.</p>
-        <div class="container">
-            <p>Más información sobre mi sitio web.</p>
-           
-           <button>Haz clic aquí</button>
-           <script src = "script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Películas</h1>
+        
+        <div class="search-section">
+            <input type="text" id="inputTitulo" placeholder="Introduce el título de la película...">
+            <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <div id="resultado" style="margin-top: 20px;">
+            <p><strong>Director:</strong> <span id="directorPelicula">-</span></p>
+            <p><strong>Año:</strong> <span id="anoPelicula">-</span></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
 </html>
